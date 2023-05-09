@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>dashboard customers</title>
+</head>
+<body>
+<section class="dashboard">
+    <section class="dashboard__sidebar">
+        <div class="dashboard__logo">
+            <svg class="dashboard__logo-icon">
+                <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+            <h1 class="dashboard__logo-title">Dashboard</h1>
+            <p class="dashboard__logo-version">v.01</p>
+        </div>
+        <ul class="dashboard__sidebar-list">
+            <li class="dashboard__sidebar-list-item">
+                <svg class="dashboard__sidebar-list-icon">
+                    <use href="./images/sprite.svg#icon-key"></use>
+                </svg>
+                <p class="dashboard__sidebar-list-link">Dashboard</p>
+                <svg class="dashboard__sidebar-list-icon dashboard__sidebar-list-icon--click">
+                    <use></use>
+                </svg>
+            </li>
+            <li class="dashboard__sidebar-list-item">
+                <svg class="dashboard__sidebar-list-icon">
+                    <use href="./images/sprite.svg#icon-square"></use>
+                </svg>
+                <a href="#" class="dashboard__sidebar-list-link">Product</a>
+                <svg class="dashboard__sidebar-list-icon dashboard__sidebar-list-icon--click">
+                    <use href="./images/sprite.svg#icon-more"></use>
+                </svg>
+            </li>
+            <li class="dashboard__sidebar-list-item">
+                <svg class="dashboard__sidebar-list-icon">
+                    <use href="./images/sprite.svg#icon-account"></use>
+                </svg>
+                <a href="#" class="dashboard__sidebar-list-link">Customers</a>
+                <svg class="dashboard__sidebar-list-icon dashboard__sidebar-list-icon--click">
+                    <use href="./images/sprite.svg#icon-more"></use>
+                </svg>
+            </li>
+            <li class="dashboard__sidebar-list-item">
+                <svg class="dashboard__sidebar-list-icon">
+                    <use href="./images/sprite.svg#icon-wallet"></use>
+                </svg>
+                <a href="#" class="dashboard__sidebar-list-link">Income</a>
+                <svg class="dashboard__sidebar-list-icon dashboard__sidebar-list-icon--click">
+                    <use href="./images/sprite.svg#icon-more"></use>
+                </svg>
+            </li>
+            <li class="dashboard__sidebar-list-item">
+                <svg class="dashboard__sidebar-list-icon">
+                    <use href="./images/sprite.svg#icon-discount"></use>
+                </svg>
+                <a href="#" class="dashboard__sidebar-list-link">Promote</a>
+                <svg class="dashboard__sidebar-list-icon dashboard__sidebar-list-icon--click">
+                    <use href="./images/sprite.svg#icon-more"></use>
+                </svg>
+            </li>
+            <li class="dashboard__sidebar-list-item">
+                <svg class="dashboard__sidebar-list-icon">
+                    <use href="./images/sprite.svg#icon-message"></use>
+                </svg>
+                <a href="#" class="dashboard__sidebar-list-link">Help</a>
+                <svg class="dashboard__sidebar-list-icon dashboard__sidebar-list-icon--click">
+                    <use href="./images/sprite.svg#icon-more"></use>
+                </svg>
+            </li>
+        </ul>
+        <div class="dashboard__user">
+            <img class="dashboard__user-img" src="./images/user.png" alt="user">
+            <div class="dashboard__user-wrapper">
+                <h4 class="dashboard__user-wrapper-title">Evano</h4>
+                <p class="dashboard__user-wrapper-position">Project Manager</p>
+            </div>
+        </div>
+    </section>
+    <section class="dashboard__customers">
+        <h2 class="dashboard__customers-title">Hello Evano 👋🏼,</h2>
+        <section class="dashboard__customers-list">
+           <div class="dashboard__customers-list-header">
+                <div>
+                    <h3 class="dashboard__customers-list-header-title">All Customers</h3>
+                    <p class="dashboard__customers-list-header-descr">Active Members</p>
+                </div>
+                <div class="dashboard__customers-list-header-wrapper">
+                    <svg class="dashboard__customers-list-header-wrapper-icon">
+                        <use href="./images/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="dashboard__customers-list-header-wrapper-input" placeholder="Search">
+                </div>
+           </div>
+            <table class="dashboard__customers-list-table">
+                <tr class="dashboard__customers-list-table-header-row">
+                    <th class="dashboard__customers-list-table-header-text">Customer Name</th>
+                    <th class="dashboard__customers-list-table-header-text">Company</th>
+                    <th class="dashboard__customers-list-table-header-text">Phone Number</th>
+                    <th class="dashboard__customers-list-table-header-text">Email</th>
+                    <th class="dashboard__customers-list-table-header-text">Country</th>
+                    <th class="dashboard__customers-list-table-header-text">Status</th>
+                </tr>
+                <tr class="dashboard__customers-list-table-row">
+                    <td class="dashboard__customers-list-table-row-text">Jane Cooper</td>
+                    <td class="dashboard__customers-list-table-row-text">Microsoft</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">(225) 555-0118</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">jane@microsoft.com</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">United States</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <button type="button" class="button button--green">Active</button>
+                    </td>
+                </tr>
+                <tr class="dashboard__customers-list-table-row">
+                    <td class="dashboard__customers-list-table-row-text">Floyd Miles</td>
+                    <td class="dashboard__customers-list-table-row-text">Yahoo</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">(205) 555-0100</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">floyd@yahoo.com</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">Kiribati</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <button type="button" class="button button--red">Inactive</button>
+                    </td>
+                </tr>
+                <tr class="dashboard__customers-list-table-row">
+                    <td class="dashboard__customers-list-table-row-text">Ronald Richards</td>
+                    <td class="dashboard__customers-list-table-row-text">Adobe</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">(302) 555-0107</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">ronald@adobe.com</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">Israel</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <button type="button" class="button button--red">Inactive</button>
+                    </td>
+                </tr>
+                <tr class="dashboard__customers-list-table-row">
+                    <td class="dashboard__customers-list-table-row-text">Marvin McKinney</td>
+                    <td class="dashboard__customers-list-table-row-text">Tesla</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">(252) 555-0126</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">marvin@tesla.com</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">Iran</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <button type="button" class="button button--green">Active</button>
+                    </td>
+                </tr>
+                <tr class="dashboard__customers-list-table-row">
+                    <td class="dashboard__customers-list-table-row-text">Jerome Bell</td>
+                    <td class="dashboard__customers-list-table-row-text">Google</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">(629) 555-0129</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">jerome@google.com</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">Réunion</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <button type="button" class="button button--green">Active</button>
+                    </td>
+                </tr>
+                <tr class="dashboard__customers-list-table-row">
+                    <td class="dashboard__customers-list-table-row-text">Kathryn Murphy</td>
+                    <td class="dashboard__customers-list-table-row-text">Microsoft</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">(406) 555-0120</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">kathryn@microsoft.com</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">Curaçao</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <button type="button" class="button button--green">Active</button>
+                    </td>
+                </tr>
+                <tr class="dashboard__customers-list-table-row">
+                    <td class="dashboard__customers-list-table-row-text">Jacob Jones</td>
+                    <td class="dashboard__customers-list-table-row-text">Yahoo</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">(208) 555-0112</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">jacob@yahoo.com</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">Brazil</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <button type="button" class="button button--green">Active</button>
+                    </td>
+                </tr>
+                <tr class="dashboard__customers-list-table-row">
+                    <td class="dashboard__customers-list-table-row-text">Kristin Watson</td>
+                    <td class="dashboard__customers-list-table-row-text">Facebook</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">(704) 555-0127</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <a href="" class="dashboard__customers-list-table-row-text-link">kristin@facebook.com</a>
+                    </td>
+                    <td class="dashboard__customers-list-table-row-text">Åland Islands</td>
+                    <td class="dashboard__customers-list-table-row-text">
+                        <button type="button" class="button button--red">Inactive</button>
+                    </td>
+                </tr>
+            </table>
+            <div class="dashboard__customers-list-footer">
+                <p class="dashboard__customers-list-footer-text">Showing data 1 to 8 of  256K entries</p>
+                <ul class="dashboard__customers-list-footer-pagination">
+                    <li class="dashboard__customers-list-footer-pagination-item">
+                        <a href="#" class="dashboard__customers-list-footer-item-link">
+                            <svg class="dashboard__customers-list-footer-item-icon">
+                                <use href="./images/sprite.svg#icon-previous"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="dashboard__customers-list-footer-pagination-item">
+                        <a href="#" class="dashboard__customers-list-footer-item-link">1</a>
+                    </li>
+                    <li class="dashboard__customers-list-footer-pagination-item">
+                        <a href="#" class="dashboard__customers-list-footer-item-link">2</a>
+                    </li>
+                    <li class="dashboard__customers-list-footer-pagination-item">
+                        <a href="#" class="dashboard__customers-list-footer-item-link">3</a>
+                    </li>
+                    <li class="dashboard__customers-list-footer-pagination-item">
+                        <a href="#" class="dashboard__customers-list-footer-item-link">4</a>
+                    </li>
+                    <li class="dashboard__customers-list-footer-pagination-item">
+                        <a href="#" class="dashboard__customers-list-footer-item-link">...</a>
+                    </li>
+                    <li class="dashboard__customers-list-footer-pagination-item">
+                        <a href="#" class="dashboard__customers-list-footer-item-link">40</a>
+                    </li>
+                    <li class="dashboard__customers-list-footer-pagination-item">
+                        <a href="#" class="dashboard__customers-list-footer-item-link">
+                            <svg class="dashboard__customers-list-footer-item-icon">
+                                <use href="./images/sprite.svg#icon-next"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+</section>
+</body>
+</html>
